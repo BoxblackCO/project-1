@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jharstille's Work</title>
+    <style>
+        body {
+            background-color: #cce2ff;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Courier New', Courier, monospace
+        }
+        .container {
+            text-align: center;
+        }
+            
+
+        .tab {
+            background-color: #374f5f;
+            padding: 10px 20px;
+            border: 1px solid #374f5f;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .content {
+            background-color: #89adc5;
+            padding: 50px;
+        }
+
+        
+
+        @keyframes is {
+                from {
+                  opacity: 0;
+                  transform: translateY(-50px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+        }
+        header {
+            color: #f1f1f1;
+            padding: 50px 0;
+            text-align: center;
+            background-color: #374f5f;
+            
+          }
+        .animated {
+            animation-name: backgroundChange;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        section {
+            display: none;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #a8beee;
+            border-radius: 5px;
+        }
+        section.active {
+            display: block;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #80a6bd;
+            padding: 8px;
+            text-align: left;
+        }
+        nav {
+            background-color: #95bef3;
+            padding: 20px;
+            text-align: center;
+        }
+        .buttonContainer {
+            text-align: center;
+        }
+        .buttonImage {
+            cursor: pointer;
+            margin-right: 10px;
+            width: 100px;
+            height: 170px;
+            border: 1px solid #b5c7d1;
+            border-radius: 5px;
+            position: static;
+        }
+    </style>
+</head>
+<nav></nav>
+    <header>
+        <h2>Welcome</h2>
+    </header> 
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+        <div style="background-color: #a2c6df; padding: 10px 20px; border: 1px solid #374f5f; border-radius: 5px;">
+   <h2>Click the Images</h2>
+    <div class="buttonContainer">
+    <img src="download.jpg" alt="Button 1" class="buttonImage" onclick="toggleSection('choose')">
+    <img src="download (1).jpg" alt="Button 2" class="buttonImage" onclick="toggleSection('activities')">
+    <img src="download (2).jpg" alt="Button 3" class="buttonImage" onclick="toggleSection('thoughts')">
+    </div>
+    </div>
+</div>
+
+    <main>
+        <section id="choose">
+            <h2>Please Choose</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>American coffee</th>
+                        <th>Japanese coffee</th>
+                        <th>Australian coffee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>America</td>
+                        <td>Japan</td>
+                        <td>Australia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="activities">
+            <h2>Activities</h2>
+            <ul>
+                <li>Sleep</li>
+                <li>Watch Kdrama</li>
+                <li>Learn</li>
+            </ul>
+            <ol>
+                <li>Ice Cream</li>
+                <li>Coke</li>
+                <li>Donut</li>
+            </ol>
+        </section>
+
+        <section id="thoughts">
+            <h2>Random Thoughts  </h2>
+            <dl>
+                <dt>Wala ako ma isip</dt>
+                <dd>Hindi ko na alam, miss ko na siya, joke</dd>
+                <dd>HAHAHAHAHAHAHAAHAHAHAH</dd>
+            </dl>
+            <p>     <blockquote>Kung pwede lang bumalik sa panahong...</blockquote>       </p>
+            <q>  kamusta  </q>
+            <abbr> haha </abbr>
+            
+<hr>
+<hr>
+<cite>Information about me:</cite>
+    <ul>
+        <li>I love coffee</li>
+        <li>I hate myself</li>
+        <li>FUck You</li>
+    </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Connect with Jharstille:</p>
+        <a href="https://www.facebook.com/profile.php?id=100090073374396">Facebook Profile</a>
+    </footer>
+
+
+
+    <script>
+        function toggleSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                if (section.id === sectionId) {
+                    section.classList.toggle('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+
+            document.getElementById('buttonImage').addEventListener('click', function() {
+                var section = document.getElementById('section1');
+                section.classList.toggle('active');
+            });
+
+        }
+    </script>
+    <div class="container">
+        <div class="tab">My words
+        <div class="content">
+
+            <p> hahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+</html>
